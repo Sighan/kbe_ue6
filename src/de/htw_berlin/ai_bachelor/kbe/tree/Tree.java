@@ -1,17 +1,17 @@
 package de.htw_berlin.ai_bachelor.kbe.tree;
 
-public class Tree {
-	private final int value;
+public class Tree<T> {
+	private final T value;
 	private final Tree left;
 	private final Tree right;
 
-	public Tree(int v, Tree l, Tree r) {
+	public Tree(T v, Tree l, Tree r) {
 		this.value = v;
 		this.left = l;
 		this.right = r;
 	}
 
-	public int getValue() {
+	public T getValue() {
 		return this.value;
 	}
 
